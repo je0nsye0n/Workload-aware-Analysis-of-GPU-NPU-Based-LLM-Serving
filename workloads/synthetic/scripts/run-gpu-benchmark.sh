@@ -30,5 +30,5 @@ cd -- "$REPO_ROOT"
   --backend vllm \
   --hardware-type gpu \
   --server-config "${SERVER_CONFIG_DIR}/Llama3.1-8B-Instruct.yaml" \
-  --benchmark-config "${BENCH_CONFIG_DIR}/prefill.yaml" \
+  --benchmark-config "${BENCH_CONFIG_DIR}/decode.yaml" \
   --model-id "${MODEL_ID}"
