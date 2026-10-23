@@ -1,0 +1,15 @@
+name: vllm
+task: offline
+scenarios:
+  - input_tokens: 128
+    output_tokens: 128
+    max_concurrency: [1, 4, 8, 16, 32, 64, 128]
+  - input_tokens: 256
+    output_tokens: 128
+    max_concurrency: [1, 4, 8, 16, 32, 64, 128]
+  - input_tokens: 512
+    output_tokens: 128
+    max_concurrency: [1, 4, 8, 16, 32, 64, 128]
+  - input_tokens: 1024
+    output_tokens: 128
+    max_concurrency: [1, 4, 8, 16, 32, 64, 128]
